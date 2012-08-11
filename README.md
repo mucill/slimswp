@@ -35,5 +35,5 @@ SLiMS WP adalah plugin untuk menampilkan informasi OPAC atau UCS melalui Wordpre
 *  Rilis Awal
 
 = 1.1 - 11/08/2012 =
-* Fixed some bugs
+* Fixed some bugs (thanks to Haris Ambon and Ansari for their correction)
 * Improve Bibliography's Detail
