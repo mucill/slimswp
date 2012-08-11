@@ -151,7 +151,7 @@ function slims_page() {
             $total            = $modsRead->resultInfo->modsResultNum;
             $per_page         = $modsRead->resultInfo->modsResultShowed;
             $author_name      = '';      
-            $tpl = '<div class="collection-list">';
+            $tpl = '<div class="entry-content collection-list">';
             foreach($xml->mods as $coll) {
                   $namespaces       = $coll->getNamespaces(true);
                   $slims            = $coll->children($namespaces['slims']);
