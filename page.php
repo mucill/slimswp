@@ -65,7 +65,7 @@ function slims_page() {
 							</tr>
 							<tr>
 								<td>'.COLLECTION_LOCATION.'</td>
-								<td>'.$coll->location.'</td>
+								<td>'.$coll->location->physicalLocation.'</td>
 							</tr>
 							<tr>
 								<td>'.EDITION.'</td>
@@ -93,7 +93,7 @@ function slims_page() {
 							</tr>
 							<tr>
 								<td>'.SERIES_TITLE.'</td>
-								<td>'.$coll->call_number.'</td>
+								<td>'.$coll->series.'</td>
 							</tr>
 							<tr>
 								<td>'.GMD.'</td>
@@ -183,7 +183,8 @@ function slims_page() {
       }
       
       $args = array(
-                              'format'       => $_SERVER["REQUEST_URI"].'../?page=%#%',
+                              'base'         => '%_%',
+                              'format'       => $_SERVER["REQUEST_URI"].'?page=%#%',
                               'total'        => ($total!=0)? ceil($total/$per_page) : 0,
                               'current'      => 0,
                               'show_all'     => False,
