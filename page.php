@@ -59,8 +59,8 @@ function slims_page() {
 							<tr>
 								<td>'.TITLE.'</td>
 								<td>'.$coll->titleInfo->title.' '. $coll->titleInfo->subTitle.'<br/>
-								<a href="'.$base_url.'index.php?p=show_detail&id='.$coll->attributes()->ID.'" class="xmlDetailLink" title="View Detail in XML Format" target="_blank">View on OPAC</a>&nbsp;|&nbsp; 
-								<a href="'.$base_url.'index.php?p=show_detail&inXML=true&id='.$coll->attributes()->ID.'" class="xmlDetailLink" title="View Detail in XML Format" target="_blank">XML Detail</a>
+								<a href="'.$base_url.'index.php?p=show_detail&id='.$coll->attributes()->ID.'" class="url" title="View Detail in XML Format" target="_blank">View on OPAC</a>&nbsp;|&nbsp; 
+								<a href="'.$base_url.'index.php?p=show_detail&inXML=true&id='.$coll->attributes()->ID.'" class="url" title="View Detail in XML Format" target="_blank">XML Detail</a>
 								</td>
 							</tr>
 							<tr>
@@ -163,7 +163,7 @@ function slims_page() {
                               }
                               $tpl .= '                              
                               <div class="detail-list">
-                                    <h3><a href="?id='.$coll->attributes()->ID.'" class="titleField" title="Record Detail">'.$coll->titleInfo->title.' '. $coll->titleInfo->subTitle.'</a></h3>
+                                    <h3><a href="?id='.$coll->attributes()->ID.'" class="url titleField" title="Record Detail">'.$coll->titleInfo->title.' '. $coll->titleInfo->subTitle.'</a></h3>
                                     <div class="author"><b>Author(s)</b> : ';
                                     foreach($coll->name as $author) {
                                           $author_name.= $author->namePart . ',';
@@ -172,7 +172,7 @@ function slims_page() {
                                     
                   $tpl .='          </div>
                                     <div class="subItem">
-                                    <a href="?id='.$coll->attributes()->ID.'" class="detailLink" title="Record Detail">Record Detail</a>
+                                    <a href="?id='.$coll->attributes()->ID.'" class="url detailLink" title="Record Detail">Record Detail</a>
                                     <a href="'.$base_url.'index.php?p=show_detail&inXML=true&id='.$coll->attributes()->ID.'" class="xmlDetailLink" title="View Detail in XML Format" target="_blank">XML Detail</a>
                                     </div>
                               </div>
