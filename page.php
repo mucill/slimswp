@@ -194,10 +194,10 @@ function slims_page() {
       }
       
       $args = array(
-                              'base'         => '%_%',
-                              'format'       => $_SERVER["REQUEST_URI"].'?page=%#%',
-                              'total'        => ($total!=0)? ceil($total/$per_page) : 1, 
-                              'current'      => max( 1, get_query_var('page') ),
+                              'base'         => @add_query_arg('page','%#%'),
+                              'format'       => '',
+                              'total'        => ($total!=0)? ceil($total/$per_page) : 1,
+                              'current'      => (intval(get_query_var('page'))) ? intval(get_query_var('page')) : 1,
                               'show_all'     => False,
                               'end_size'     => 5,
                               'mid_size'     => 5,
