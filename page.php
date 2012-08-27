@@ -2,8 +2,8 @@
 /*
 Plugin Name: SLiMS WP
 Plugin URI: http://slims.web.id
-Description: Display all collection from SLiMS applications.
-Version: 1.0
+Description: Display all collections from SLiMS application. Please visit www.slims.web.id for more detail about SLiMS (Senayan Library Management System)
+Version: 1.2
 Author: Eddy Subratha
 Author URI: http://www.facebook.com/mucill
 
