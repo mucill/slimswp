@@ -5,7 +5,7 @@ SLiMS WP adalah plugin untuk menampilkan informasi OPAC atau UCS melalui Wordpre
 * Contributors: Eddy Subratha
 * Tags: slims, senayan, senayan wp plugin, perpustakaan, library automation, 
 * Requires at least: 3.0
-* Stable tag: 1.0
+* Stable tag: 1.2
 * License: GPLv3
 * License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -38,5 +38,5 @@ Changelog
 * Fixed some bugs (thanks to Haris Ambon and Ansari for their correction)
 * Improve Bibliography's Detail
 
-### 1.2 - 13/08/2012 =
+### 1.2 - 13/08/2012
 * Fix some bugs
